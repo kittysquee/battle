@@ -6,11 +6,17 @@ describe Game do
   let(:player_2) { double :player_2 }
 
   describe '#initialization' do
-    it 'should initialize with player 1' do
-      expect(game.player).to include player_1
+  end
+
+  describe '#player_1' do
+    it 'retrieves the first player' do
+      expect(game.player_1).to eq player_1
     end
-    it 'should initialize with player 2' do
-      expect(game.player).to include player_2
+  end
+
+  describe '#player_2' do
+    it 'retrieves the second player' do
+      expect(game.player_2).to eq player_2
     end
   end
 
