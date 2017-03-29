@@ -16,13 +16,6 @@ describe Player do
     end
   end
 
-  describe '#attack' do
-    it 'damages a player' do
-      expect(elaine).to receive(:receive_damage)
-      ruan.attack(elaine)
-    end
-  end
-
   describe '#receive_damage' do
     it 'should reduce player 2\'s HP by 10' do
       expect { ruan.receive_damage }.to change{ ruan.hit_points }.by -10
