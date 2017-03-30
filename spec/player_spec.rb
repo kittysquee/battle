@@ -1,12 +1,12 @@
 require 'player'
 
 describe Player do
-  subject(:ruan) {described_class.new("Ruan")}
-  subject(:elaine) {described_class.new("Elaine")}
+  subject(:ruan) {described_class.new('Ruan')}
+  subject(:elaine) {described_class.new('Elaine')}
 
   describe '#initialization' do
-    it "should return a players name" do
-      expect(ruan.name).to eq "Ruan"
+    it 'should return a players name' do
+      expect(ruan.name).to eq 'Ruan'
     end
   end
 

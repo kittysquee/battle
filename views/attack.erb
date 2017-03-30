@@ -1,5 +1,10 @@
-<img  src="http://www.needtoconsume.com/wp-content/uploads/2014/07/Adam-West-and-Burt-Ward.jpg" height="400" width="666">
+<img  src="http://www.needtoconsume.com/wp-content/uploads/2014/07/Adam-West-and-Burt-Ward.jpg" height='400' width='666'>
 <br></br>
 <h1>POW! <%=@game.player_1.name%> attacks <%=@game.player_2.name%></h1>
 <br></br>
+<h2><%= @game.current_turn.name %>'s turn
 <h2><%=@game.player_2.name%>'s hit points: <%=@game.player_2.hit_points%>HP</h2>
+
+<form action="/attack">
+  <input type="submit" value="OK">
+</form>

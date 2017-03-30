@@ -25,6 +25,7 @@ class Battle < Sinatra::Base
   get '/attack' do
     @game = $game
     @game.attack(@game.player_2) # pass who is attacking who
+    @game.switch_turn
     erb(:attack)
   end
 
