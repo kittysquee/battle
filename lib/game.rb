@@ -22,8 +22,6 @@ class Game
     @current_turn = opponent_of(current_turn)
   end
 
-  private
-
   def opponent_of(current_turn)
     if current_turn == player_1
       player_2

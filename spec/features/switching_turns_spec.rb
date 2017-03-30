@@ -9,8 +9,8 @@ feature 'Switching turns' do
       sign_in_and_play
       click_button 'HIT!'
       click_button 'OK'
-      expect(page).not_to have_content "Pixel's turn"
-      expect(page).to have_content "Elaine's turn"
+      expect(page).not_to have_content "Elaine's turn"
+      expect(page).to have_content "Pixel's turn"
     end
   end
 end
