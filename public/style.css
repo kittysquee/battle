@@ -1,0 +1,31 @@
+html {
+  min-height: 100%;
+  position: relative;
+}
+body {
+  background-color: rgb(146, 168, 204);
+  text-align: center;
+}
+p {
+  font-family: helvetica, sans-serif;
+  font-size: 22px;
+}
+h1 {
+  font-family: helvetica oblique, sans-serif;
+  font-size: 50px
+}
+h2 {
+  font-family: helvetica oblique, sans-serif;
+  font-size: 34px
+}
+img {
+  width: 100%;
+  max-width: 666px;
+  max-height: 400px;
+}
+
+
+
+/*https://www.catsanddiabetes.com/wp-content/uploads/2014/03/Cat-Obesity.jpg*/
+
+/*http://www.cat-breeds-encyclopedia.com/images/Sphynx-cat-on-white.jpg*/
