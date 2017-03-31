@@ -23,10 +23,6 @@ class Game
   end
 
   def opponent_of(current_turn)
-    if current_turn == player_1
-      player_2
-    else
-      player_1
-    end
+    current_turn == player_1 ? player_2 : player_1
   end
 end

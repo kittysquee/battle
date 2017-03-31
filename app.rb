@@ -18,7 +18,11 @@ class Battle < Sinatra::Base
 
   get '/play' do
     @game = $game
-    erb(:play)
+    if $game.player_1.hit_points <= 0 || $game.player_2.hit_points <= 0
+      erb(:game_over)
+    else
+      erb(:play)
+    end
   end
 
   get '/attack' do

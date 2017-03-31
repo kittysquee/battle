@@ -15,6 +15,6 @@ feature 'Attack confirmation' do
   scenario "Player 1 gets confirmation of player 2's hit" do
     sign_in_and_play
     click_button "HIT!"
-    expect(page).to have_content "OUCH! YOU HAVE BEEN ATTACKED!!!!!!!!!"
+    expect(page).to have_content "OUCHIES! YOU HAVE BEEN PROPERLY MERKED!!!!!!!!!"
   end
 end

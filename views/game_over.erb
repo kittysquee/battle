@@ -1,1 +1,5 @@
-<%= @game.loser.name %> loses!
+<h1>
+<%= if $game.player_1.hit_points <= 0
+  @game.current_turn.name
+elsif $game.player_2.hit_points <= 0
+  @game.current_turn.name end %> has been royally fucked!</h1>
